@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поиск стран</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🌍 Поиск стран</h1>
+        <p class="subtitle">Введите название страны для поиска</p>
+      </header>
+
+      <main>
+        <div class="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Например: Ukraine, Germany, France..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div id="results-container"></div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
